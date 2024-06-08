@@ -1,26 +1,26 @@
 [
   {
-    "name":"Horizon UI PRO",
-    "status": "Approved",
-    "date": "18 Apr 2022",
-    "progress": 75.5  
+    "modelo": "Recomendador de Productos",
+    "estado": "Good",
+    "última_predicción": "18 Apr 2024",
+    "progreso": 75.5  
   },
   {
-    "name":"Horizon UI Free",
-    "status": "Disable",
-    "date": "18 Apr 2022",
-    "progress": 25.5  
+    "modelo": "Detección de Fraude en Transacciones",
+    "estado": "Degraded",
+    "última_predicción": "17 Apr 2024",
+    "progreso": 45.0  
   },
   {
-    "name":"Marketplace",
-    "status": "Error",
-    "date": "20 May 2021",
-    "progress": 90  
+    "modelo": "Segmentación de Clientes",
+    "estado": "Poor",
+    "última_predicción": "16 Apr 2024",
+    "progreso": 20.0  
   },
   {
-    "name":"Weekly Updates",
-    "status": "Approved",
-    "date": "12 Jul 2021",
-    "progress": 50.5  
+    "modelo": "Optimización de Precios",
+    "estado": "Good",
+    "última_predicción": "15 Apr 2024",
+    "progreso": 90.0  
   }
 ]
