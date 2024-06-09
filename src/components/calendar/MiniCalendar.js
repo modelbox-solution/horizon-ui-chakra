@@ -11,6 +11,8 @@ import Card from "components/card/Card.js";
 export default function MiniCalendar(props) {
   const { selectRange, ...rest } = props;
   const [value, onChange] = useState(new Date());
+  const [date, setDate] = useState(new Date());
+  const locale = 'fr-CA'; 
   return (
     <Card
       align='center'

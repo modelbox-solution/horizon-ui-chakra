@@ -218,10 +218,10 @@ export const barChartOptionsModelLaunchings = {
 };
 
 export const pieChartOptions = {
-  labels: ["CRM", "HR", "Finance", "IT"],
-  colors: ["#E31A1A", "#3965FF", "#FFB547"],
+  labels: ["CRM", "HR", "Finance"],
+  colors: ["#422AFB", "#00B5D8", "#D53F8C"],
   chart: {
-    width: "50px",
+    width: "100px",
   },
   states: {
     hover: {
@@ -248,7 +248,7 @@ export const pieChartOptions = {
     },
   },
   fill: {
-    colors: ["#E31A1A", "#3965FF", "#FFB547"],
+    colors: ["#422AFB", "#00B5D8", "#D53F8C"],
   },
   tooltip: {
     enabled: true,
