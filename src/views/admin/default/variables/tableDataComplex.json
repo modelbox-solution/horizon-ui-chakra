@@ -3,54 +3,54 @@
     "modelo": "Recomendador de Productos",
     "estado": "Good",
     "última_predicción": "18 Apr 2024",
-    "progreso": 75.5  
+    "consumo": 75.5  
   },
   {
     "modelo": "Detección de Fraude en Transacciones",
     "estado": "Degraded",
     "última_predicción": "17 Apr 2024",
-    "progreso": 45.0  
+    "consumo": 45.0  
   },
   {
     "modelo": "Segmentación de Clientes",
     "estado": "Poor",
     "última_predicción": "16 Apr 2024",
-    "progreso": 20.0  
+    "consumo": 20.0  
   },
   {
     "modelo": "Optimización de Precios",
     "estado": "Good",
     "última_predicción": "15 Apr 2024",
-    "progreso": 90.0  
+    "consumo": 90.0  
   },
   {
     "modelo": "Segmentación de Clientes",
     "estado": "Poor",
     "última_predicción": "16 Apr 2024",
-    "progreso": 20.0  
+    "consumo": 20.0  
   },  
   {
     "modelo": "Segmentación de Clientes",
     "estado": "Poor",
     "última_predicción": "16 Apr 2024",
-    "progreso": 20.0  
+    "consumo": 20.0  
   },  
   {
     "modelo": "Segmentación de Clientes",
     "estado": "Poor",
     "última_predicción": "16 Apr 2024",
-    "progreso": 20.0  
+    "consumo": 20.0  
   },  
   {
     "modelo": "Segmentación de Clientes",
     "estado": "Poor",
     "última_predicción": "16 Apr 2024",
-    "progreso": 20.0  
+    "consumo": 20.0  
   },  
   {
     "modelo": "Segmentación de Clientes",
     "estado": "Poor",
     "última_predicción": "16 Apr 2024",
-    "progreso": 20.0  
+    "consumo": 20.0  
   }
 ]

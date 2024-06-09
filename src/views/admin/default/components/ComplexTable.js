@@ -147,7 +147,7 @@ export default function ColumnsTable(props) {
                         {cell.value}
                       </Text>
                     );
-                  } else if (cell.column.Header === "Progreso") {
+                  } else if (cell.column.Header === "Consumo") {
                     data = (
                       <Flex align="center">
                         <Progress

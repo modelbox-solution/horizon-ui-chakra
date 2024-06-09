@@ -7,8 +7,8 @@ import BarChart from "components/charts/BarChart";
 // Custom components
 import Card from "components/card/Card.js";
 import {
-  barChartDataDailyTraffic,
-  barChartOptionsDailyTraffic,
+  barChartDataDailyCallsAPI,
+  barChartOptionsDailyCallsAPI,
 } from "variables/charts";
 
 // Assets
@@ -24,7 +24,7 @@ export default function DailyTraffic(props) {
       <Flex justify='space-between' align='start' px='10px' pt='5px'>
         <Flex flexDirection='column' align='start' me='20px'>
           <Text color='secondaryGray.600' fontSize='sm' fontWeight='500'>
-            Daily Traffic
+          Consultas
           </Text>
           <Flex align='end'>
             <Text
@@ -39,7 +39,7 @@ export default function DailyTraffic(props) {
               color='secondaryGray.600'
               fontSize='sm'
               fontWeight='500'>
-              Visitors
+              Llamadas a la API
             </Text>
           </Flex>
         </Flex>
@@ -52,8 +52,8 @@ export default function DailyTraffic(props) {
       </Flex>
       <Box h='240px' mt='auto'>
         <BarChart
-          chartData={barChartDataDailyTraffic}
-          chartOptions={barChartOptionsDailyTraffic}
+          chartData={barChartDataDailyCallsAPI}
+          chartOptions={barChartOptionsDailyCallsAPI}
         />
       </Box>
     </Card>

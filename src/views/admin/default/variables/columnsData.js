@@ -30,7 +30,7 @@ export const columnsDataComplex = [
     accessor: "última_predicción",
   },
   {
-    Header: "Progreso",
-    accessor: "progreso",
+    Header: "Consumo",
+    accessor: "consumo",
   },
 ];

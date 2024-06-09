@@ -1,13 +1,13 @@
-// Daily Traffic Dashboards Default
+// Consultas por usuario Dashboards Default
 
-export const barChartDataDailyTraffic = [
+export const barChartDataDailyCallsAPI = [
   {
-    name: "Daily Traffic",
+    name: "Consultas",
     data: [20, 30, 40, 20, 45, 50, 30],
   },
 ];
 
-export const barChartOptionsDailyTraffic = {
+export const barChartOptionsDailyCallsAPI = {
   chart: {
     toolbar: {
       show: false,
@@ -27,7 +27,16 @@ export const barChartOptionsDailyTraffic = {
     theme: "dark",
   },
   xaxis: {
-    categories: ["00", "04", "08", "12", "14", "16", "18"],
+    categories: [
+      'jperez',
+      'agomez',
+      'mfernandez',
+      'lgomez',
+      'mgarcia',
+      'crodriguez',
+      'lmartinez',
+      'jlopez'
+  ],
     show: true,
     labels: {
       show: true,
@@ -196,7 +205,7 @@ export const barChartOptionsModelLaunchings = {
   legend: {
     show: false,
   },
-  colors: ["#01B574", "#EE5D50", "#E3E3E3"],
+  colors: ["#01B574", "#EE5D50", "#E3E3E3"], // PARA MODO NOCHE
   dataLabels: {
     enabled: false,
   },
