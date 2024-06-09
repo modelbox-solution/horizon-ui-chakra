@@ -12,8 +12,8 @@ import Card from "components/card/Card.js";
 import BarChart from "components/charts/BarChart";
 import React from "react";
 import {
-  barChartDataConsumption,
-  barChartOptionsConsumption,
+  barChartDataModelLaunchings,
+  barChartOptionsModelLaunchings,
 } from "variables/charts";
 import { MdBarChart } from "react-icons/md";
 
@@ -41,7 +41,7 @@ export default function WeeklyRevenue(props) {
           fontSize='xl'
           fontWeight='700'
           lineHeight='100%'>
-          Weekly Revenue
+          Lanzamiento de modelos
         </Text>
         <Button
           align='center'
@@ -61,8 +61,8 @@ export default function WeeklyRevenue(props) {
 
       <Box h='240px' mt='auto'>
         <BarChart
-          chartData={barChartDataConsumption}
-          chartOptions={barChartOptionsConsumption}
+          chartData={barChartDataModelLaunchings}
+          chartOptions={barChartOptionsModelLaunchings}
         />
       </Box>
     </Card>

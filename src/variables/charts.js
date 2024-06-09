@@ -105,22 +105,22 @@ export const barChartOptionsDailyTraffic = {
 
 // Consumption Users Reports
 
-export const barChartDataConsumption = [
+export const barChartDataModelLaunchings = [
   {
-    name: "PRODUCT A",
-    data: [400, 370, 330, 390, 320, 350, 360, 320, 380],
+    name: "OK",
+    data: [2, 3, 1, 2, 1, 0, 1, 1, 0],
   },
   {
-    name: "PRODUCT B",
-    data: [400, 370, 330, 390, 320, 350, 360, 320, 380],
+    name: "KO",
+    data: [1, 0, 2, 1, 1, 2, 1, 0, 2],
   },
   {
-    name: "PRODUCT C",
-    data: [400, 370, 330, 390, 320, 350, 360, 320, 380],
+    name: "SIN LANZAR",
+    data: [0, 1, 0, 1, 2, 1, 0, 2, 1],
   },
 ];
 
-export const barChartOptionsConsumption = {
+export const barChartOptionsModelLaunchings = {
   chart: {
     stacked: true,
     toolbar: {
@@ -141,7 +141,7 @@ export const barChartOptionsConsumption = {
     theme: "dark",
   },
   xaxis: {
-    categories: ["17", "18", "19", "20", "21", "22", "23", "24", "25"],
+    categories: ["AUG", "SEP", "OCT", "NOV", "DEC", "JAN", "FEB", "MAR", "APR"],
     show: false,
     labels: {
       show: true,
@@ -191,12 +191,12 @@ export const barChartOptionsConsumption = {
   },
   fill: {
     type: "solid",
-    colors: ["#5E37FF", "#6AD2FF", "#E1E9F8"],
+    colors: ["#01B574", "#EE5D50", "#E3E3E3"],
   },
   legend: {
     show: false,
   },
-  colors: ["#5E37FF", "#6AD2FF", "#E1E9F8"],
+  colors: ["#01B574", "#EE5D50", "#E3E3E3"],
   dataLabels: {
     enabled: false,
   },
