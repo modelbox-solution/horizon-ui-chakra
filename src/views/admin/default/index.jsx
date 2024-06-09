@@ -25,6 +25,11 @@ import {
   MdPeople,
   MdOutlineModelTraining,
 } from "react-icons/md";
+import { 
+  FaRobot,
+  FaBox 
+} from "react-icons/fa";
+import { LuAlertTriangle } from "react-icons/lu";
 import CheckTable from "views/admin/default/components/CheckTable";
 import ComplexTable from "views/admin/default/components/ComplexTable";
 import DailyTraffic from "views/admin/default/components/DailyTraffic";
@@ -42,13 +47,17 @@ import tableDataComplex from "views/admin/default/variables/tableDataComplex.jso
 export default function UserReports() {
   // Chakra Color Mode
   const brandColor = useColorModeValue("brand.500", "white");
+  const alertColor = useColorModeValue("red.500", "brand.500");
   const boxBg = useColorModeValue("secondaryGray.300", "whiteAlpha.100");
   return (
     <Box pt={{ base: "130px", md: "80px", xl: "80px" }}>
       <SimpleGrid
         columns={{ base: 1, md: 2, lg: 3, "2xl": 6 }}
-        gap="20px"
+        gap="30px"
         mb="20px"
+        maxWidth="3000px" // Ajusta según sea necesario
+        mx="auto"         // Centrado horizontal
+        placeItems="center" // Centrado horizontal y vertical
       >
         <MiniStatistics
           startContent={
@@ -56,8 +65,20 @@ export default function UserReports() {
               w="56px"
               h="56px"
               bg={boxBg}
+              icon={<Icon w="32px" h="32px" as={FaBox} color={brandColor} />}
+            />
+          }
+          name="Total de modelos en ModelBox"
+          value="20"
+        />
+        <MiniStatistics
+          startContent={
+            <IconBox
+              w="56px"
+              h="56px"
+              bg={boxBg}
               icon={
-                <Icon w="32px" h="32px" as={MdOutlineModelTraining} color={brandColor} />
+                <Icon w="32px" h="32px" as={FaRobot} color={brandColor} />
               }
             />
           }
@@ -73,8 +94,8 @@ export default function UserReports() {
               icon={<Icon w="32px" h="32px" as={MdAssessment} color={brandColor} />}
             />
           }
-          name="Rendimiento Promedio"
-          value="87%"
+          name="Multiplicador de tasa de éxito"
+          value="x4.76"
         />
         <MiniStatistics
           startContent={
@@ -94,45 +115,11 @@ export default function UserReports() {
               w="56px"
               h="56px"
               bg={boxBg}
-              icon={<Icon w="32px" h="32px" as={MdModelTraining} color={brandColor} />}
+              icon={<Icon w="32px" h="32px" as={LuAlertTriangle} color={alertColor} />}
             />
           }
           name="Modelos con Peor Rendimiento"
           value="2"
-        />
-        <MiniStatistics
-          endContent={
-            <Flex me="-16px" mt="10px">
-              <FormLabel htmlFor="balance">
-                <Avatar src={Spain} />
-              </FormLabel>
-              <Select
-                id="balance"
-                variant="mini"
-                mt="5px"
-                me="0px"
-                defaultValue="usd"
-              >
-                <option value="usd">USD</option>
-                <option value="eur">EUR</option>
-                <option value="gba">GBA</option>
-              </Select>
-            </Flex>
-          }
-          name="Tu Balance"
-          value="$1,000"
-        />
-        <MiniStatistics
-          startContent={
-            <IconBox
-              w="56px"
-              h="56px"
-              bg={boxBg}
-              icon={<Icon w="32px" h="32px" as={MdFileCopy} color={brandColor} />}
-            />
-          }
-          name="Total de Proyectos"
-          value="235"
         />
       </SimpleGrid>
 
