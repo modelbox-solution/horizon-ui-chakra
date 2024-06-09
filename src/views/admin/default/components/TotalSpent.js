@@ -16,8 +16,8 @@ import { MdBarChart, MdOutlineCalendarToday } from "react-icons/md";
 // Assets
 import { RiArrowUpSFill } from "react-icons/ri";
 import {
-  lineChartDataTotalSpent,
-  lineChartOptionsTotalSpent,
+  lineChartDataSucessRate,
+  lineChartOptionsSucessRate,
 } from "variables/charts";
 
 export default function TotalSpent(props) {
@@ -56,14 +56,14 @@ export default function TotalSpent(props) {
           textAlign='start'
           fontWeight='700'
           lineHeight='100%'>
-          $37.5K
+          x4.76
         </Text>
         <Flex flexDirection='column' align='center' mx={5}>
           <Text
             color='secondaryGray.600'
             fontSize='x-small'
             fontWeight='500'>
-            Gasto total
+            Tasa de éxito
           </Text>
           <Flex align='center'>
             <Icon as={RiArrowUpSFill} color='green.500'/>
@@ -76,7 +76,7 @@ export default function TotalSpent(props) {
         <Flex align='center'>
           <Icon as={IoCheckmarkCircle} color='green.500' me='4px' />
           <Text color='green.500' fontSize='md' fontWeight='700'>
-            En orden
+            Al día
           </Text>
         </Flex>
 
@@ -91,6 +91,7 @@ export default function TotalSpent(props) {
           h='37px'
           lineHeight='100%'
           borderRadius='10px'
+          left='410px' // Ajusta el valor según sea necesario
           {...rest}>
           <Icon as={MdBarChart} color={iconColor} w='24px' h='24px' />
         </Button>
@@ -99,8 +100,8 @@ export default function TotalSpent(props) {
     
         <Box minH='270px' minW='100%' mt='auto'>
           <LineChart
-            chartData={lineChartDataTotalSpent}
-            chartOptions={lineChartOptionsTotalSpent}
+            chartData={lineChartDataSucessRate}
+            chartOptions={lineChartOptionsSucessRate}
           />
         </Box>
       </Flex>

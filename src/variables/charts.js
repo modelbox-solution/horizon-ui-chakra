@@ -251,17 +251,18 @@ export const pieChartData = [63, 25, 12];
 
 // Total Spent Default
 
-export const lineChartDataTotalSpent = [
+export const lineChartDataSucessRate = [
   {
-    name: "Revenue",
-    data: [25, 50, 64, 48, 66, 49, 48],
+    name: "Tasa de éxito",
+    data: [30, 55, 70, 55, 75, 175.6, 142.8],
   },
   {
-    name: "Profit",
-    data: [12, 30, 50, 24, 16, 50, 86],
+    name: "Tasa natural",
+    data: [15, 35, 55, 28, 20, 50, 30],
   },
 ];
-export const lineChartOptionsTotalSpent = {
+
+export const lineChartOptionsSucessRate = {
   chart: {
     toolbar: {
       show: false,
@@ -349,14 +350,14 @@ export const lineChartOptionsTotalSpent = {
   },
   series: [
     {
-      name: "Revenue",
+      name: "Tása de éxito",
       data: [25, 50, 64, 48, 66, 49, 48],
       stroke: {
         type: "solid",
       },
     },
     {
-      name: "Profit",
+      name: "Tasa natural",
       data: [12, 30, 50, 24, 16, 50, 86],
       stroke: {
         type: "dashed",
