@@ -28,7 +28,7 @@ export const barChartOptionsDailyTraffic = {
   },
   xaxis: {
     categories: ["00", "04", "08", "12", "14", "16", "18"],
-    show: false,
+    show: true,
     labels: {
       show: true,
       style: {
@@ -38,14 +38,14 @@ export const barChartOptionsDailyTraffic = {
       },
     },
     axisBorder: {
-      show: false,
+      show: true,
     },
     axisTicks: {
-      show: false,
+      show: true,
     },
   },
   yaxis: {
-    show: false,
+    show: true,
     color: "black",
     labels: {
       show: true,
@@ -254,14 +254,13 @@ export const pieChartData = [63, 25, 12];
 export const lineChartDataTotalSpent = [
   {
     name: "Revenue",
-    data: [50, 64, 48, 66, 49, 68],
+    data: [25, 50, 64, 48, 66, 49, 48],
   },
   {
     name: "Profit",
-    data: [30, 40, 24, 46, 20, 46],
+    data: [12, 30, 50, 24, 16, 50, 86],
   },
 ];
-
 export const lineChartOptionsTotalSpent = {
   chart: {
     toolbar: {
@@ -299,12 +298,11 @@ export const lineChartOptionsTotalSpent = {
     enabled: false,
   },
   stroke: {
-    curve: "smooth",
-    type: "line",
+    curve: "smooth", // Aplicado globalmente, pero se puede sobrescribir en cada serie
   },
   xaxis: {
-    type: "numeric",
-    categories: ["SEP", "OCT", "NOV", "DEC", "JAN", "FEB"],
+    type: "category", // Cambiado a "category" para las etiquetas de texto
+    categories: ["AUG", "SEP", "OCT", "NOV", "DEC", "JAN", "FEB"],
     labels: {
       style: {
         colors: "#A3AED0",
@@ -313,24 +311,60 @@ export const lineChartOptionsTotalSpent = {
       },
     },
     axisBorder: {
-      show: false,
+      show: true, // Mostrar el borde del eje x
+      color: "#A3AED0",
     },
     axisTicks: {
-      show: false,
+      show: true, // Mostrar las marcas de los ticks en el eje x
+      color: "#A3AED0",
     },
   },
   yaxis: {
-    show: false,
+    show: true, // Mostrar el eje y
+    labels: {
+      style: {
+        colors: "#A3AED0",
+        fontSize: "12px",
+        fontWeight: "500",
+      },
+    },
+    axisBorder: {
+      show: true, // Mostrar el borde del eje y
+      color: "#A3AED0",
+    },
+    axisTicks: {
+      show: true, // Mostrar las marcas de los ticks en el eje y
+      color: "#A3AED0",
+    },
   },
   legend: {
-    show: false,
+    show: true, // Mostrar leyenda para identificar las líneas
   },
   grid: {
-    show: false,
+    show: true,
     column: {
       color: ["#7551FF", "#39B8FF"],
       opacity: 0.5,
     },
   },
-  color: ["#7551FF", "#39B8FF"],
+  series: [
+    {
+      name: "Revenue",
+      data: [25, 50, 64, 48, 66, 49, 48],
+      stroke: {
+        type: "solid",
+      },
+    },
+    {
+      name: "Profit",
+      data: [12, 30, 50, 24, 16, 50, 86],
+      stroke: {
+        type: "dashed",
+        dashArray: 5, // Configuración específica para la línea discontinua
+      },
+    },
+  ],
 };
+
+
+
