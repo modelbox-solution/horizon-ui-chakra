@@ -117,15 +117,15 @@ export const barChartOptionsDailyCallsAPI = {
 export const barChartDataModelLaunchings = [
   {
     name: "OK",
-    data: [2, 3, 1, 2, 1, 0, 1, 1, 0],
+    data: [5, 6, 6, 6, 8, 9, 11, 11, 10],
   },
   {
     name: "KO",
-    data: [1, 0, 2, 1, 1, 2, 1, 0, 2],
+    data: [1, 0, 1, 2, 0, 1, 0, 0, 1],
   },
   {
     name: "SIN LANZAR",
-    data: [0, 1, 0, 1, 2, 1, 0, 2, 1],
+    data: [0, 1, 0, 1, 1, 0, 0, 1, 1],
   },
 ];
 
@@ -168,10 +168,10 @@ export const barChartOptionsModelLaunchings = {
     },
   },
   yaxis: {
-    show: false,
+    show: true,
     color: "black",
     labels: {
-      show: false,
+      show: true,
       style: {
         colors: "#A3AED0",
         fontSize: "14px",
@@ -185,7 +185,7 @@ export const barChartOptionsModelLaunchings = {
     show: true,
     yaxis: {
       lines: {
-        show: false,
+        show: true,
         opacity: 0.5,
       },
     },
@@ -200,26 +200,26 @@ export const barChartOptionsModelLaunchings = {
   },
   fill: {
     type: "solid",
-    colors: ["#01B574", "#EE5D50", "#E3E3E3"],
+    colors: ["#23C65F", "#EE5D50", "#F9D957"],
   },
   legend: {
-    show: false,
+    show: true,
   },
-  colors: ["#01B574", "#EE5D50", "#E3E3E3"], // PARA MODO NOCHE
+  colors: ["#23C65F", "#EE5D50", "#F9D957"], // PARA MODO NOCHE
   dataLabels: {
     enabled: false,
   },
   plotOptions: {
     bar: {
       borderRadius: 10,
-      columnWidth: "20px",
+      columnWidth: "25px",
     },
   },
 };
 
 export const pieChartOptions = {
   labels: ["CRM", "HR", "Finance", "IT"],
-  colors: ["#4318FF", "#E31A1A", "#3965FF", "#FFB547"],
+  colors: ["#E31A1A", "#3965FF", "#FFB547"],
   chart: {
     width: "50px",
   },
@@ -248,7 +248,7 @@ export const pieChartOptions = {
     },
   },
   fill: {
-    colors: ["#4318FF", "#E31A1A", "#3965FF", "#FFB547"],
+    colors: ["#E31A1A", "#3965FF", "#FFB547"],
   },
   tooltip: {
     enabled: true,
@@ -256,7 +256,7 @@ export const pieChartOptions = {
   },
 };
 
-export const pieChartData = [63, 25, 12, 21];
+export const pieChartData = [25, 12, 21];
 
 // Total Spent Default
 
