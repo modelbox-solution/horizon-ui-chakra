@@ -218,8 +218,8 @@ export const barChartOptionsModelLaunchings = {
 };
 
 export const pieChartOptions = {
-  labels: ["Your files", "System", "Empty"],
-  colors: ["#4318FF", "#6AD2FF", "#EFF4FB"],
+  labels: ["CRM", "HR", "Finance", "IT"],
+  colors: ["#4318FF", "#E31A1A", "#3965FF", "#FFB547"],
   chart: {
     width: "50px",
   },
@@ -248,7 +248,7 @@ export const pieChartOptions = {
     },
   },
   fill: {
-    colors: ["#4318FF", "#6AD2FF", "#EFF4FB"],
+    colors: ["#4318FF", "#E31A1A", "#3965FF", "#FFB547"],
   },
   tooltip: {
     enabled: true,
@@ -256,7 +256,7 @@ export const pieChartOptions = {
   },
 };
 
-export const pieChartData = [63, 25, 12];
+export const pieChartData = [63, 25, 12, 21];
 
 // Total Spent Default
 

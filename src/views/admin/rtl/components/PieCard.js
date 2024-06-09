@@ -26,7 +26,7 @@ export default function Conversion(props) {
         w='100%'
         mb='8px'>
         <Text color={textColor} fontSize='md' fontWeight='600' mt='4px'>
-          Your Pie Chart
+        Cónsumo por área
         </Text>
         <Select
           fontSize='sm'
@@ -34,9 +34,9 @@ export default function Conversion(props) {
           defaultValue='monthly'
           width='unset'
           fontWeight='700'>
-          <option value='daily'>Daily</option>
-          <option value='monthly'>Monthly</option>
-          <option value='yearly'>Yearly</option>
+          <option value='daily'>Diario</option>
+          <option value='monthly'>Mensual</option>
+          <option value='yearly'>Anual</option>
         </Select>
       </Flex>
 
