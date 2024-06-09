@@ -289,7 +289,7 @@ export const lineChartOptionsTotalSpent = {
     radius: 2,
     offsetX: 0,
     offsetY: 0,
-    showNullDataPoints: true,
+    showNullDataPoints: false,
   },
   tooltip: {
     theme: "dark",
@@ -315,7 +315,7 @@ export const lineChartOptionsTotalSpent = {
       color: "#A3AED0",
     },
     axisTicks: {
-      show: true, // Mostrar las marcas de los ticks en el eje x
+      show: false, // Mostrar las marcas de los ticks en el eje x
       color: "#A3AED0",
     },
   },
@@ -333,7 +333,7 @@ export const lineChartOptionsTotalSpent = {
       color: "#A3AED0",
     },
     axisTicks: {
-      show: true, // Mostrar las marcas de los ticks en el eje y
+      show: false, // Mostrar las marcas de los ticks en el eje y
       color: "#A3AED0",
     },
   },
