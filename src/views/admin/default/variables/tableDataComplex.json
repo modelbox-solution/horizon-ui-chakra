@@ -22,5 +22,35 @@
     "estado": "Good",
     "última_predicción": "15 Apr 2024",
     "progreso": 90.0  
+  },
+  {
+    "modelo": "Segmentación de Clientes",
+    "estado": "Poor",
+    "última_predicción": "16 Apr 2024",
+    "progreso": 20.0  
+  },  
+  {
+    "modelo": "Segmentación de Clientes",
+    "estado": "Poor",
+    "última_predicción": "16 Apr 2024",
+    "progreso": 20.0  
+  },  
+  {
+    "modelo": "Segmentación de Clientes",
+    "estado": "Poor",
+    "última_predicción": "16 Apr 2024",
+    "progreso": 20.0  
+  },  
+  {
+    "modelo": "Segmentación de Clientes",
+    "estado": "Poor",
+    "última_predicción": "16 Apr 2024",
+    "progreso": 20.0  
+  },  
+  {
+    "modelo": "Segmentación de Clientes",
+    "estado": "Poor",
+    "última_predicción": "16 Apr 2024",
+    "progreso": 20.0  
   }
 ]

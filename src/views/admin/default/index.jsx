@@ -134,15 +134,14 @@ export default function UserReports() {
           <PieCard />
         </SimpleGrid>
       </SimpleGrid>
-      <SimpleGrid columns={{ base: 1, md: 1, xl: 2 }} gap="20px" mb="20px">
-        <ComplexTable
-          columnsData={columnsDataComplex}
-          tableData={tableDataComplex}
-        />
-        <SimpleGrid columns={{ base: 1, md: 2, xl: 2 }} gap="20px">
-          <Tasks />
-          <MiniCalendar h="100%" minW="100%" selectRange={false} />
-        </SimpleGrid>
+      <SimpleGrid columns={{ base: 1, md: 1, xl: 4 }} gap="20px" mb="20px">
+        <Box gridColumn={{ base: 'auto', xl: 'span 3' }}> {/* El ComplexTable ocupa 3 huecos en pantallas grandes (xl) */}
+          <ComplexTable
+            columnsData={columnsDataComplex}
+            tableData={tableDataComplex}
+          />
+        </Box>
+        <MiniCalendar h="100%" minW="100%" selectRange={false} />
       </SimpleGrid>
     </Box>
   );
