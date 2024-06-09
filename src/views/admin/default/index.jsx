@@ -74,7 +74,7 @@ export default function UserReports() {
             />
           }
           name="Rendimiento Promedio"
-          value="85%"
+          value="87%"
         />
         <MiniStatistics
           startContent={
@@ -86,7 +86,7 @@ export default function UserReports() {
             />
           }
           name="Clientes Potenciales Captados"
-          value="154"
+          value="1054"
         />
         <MiniStatistics
           startContent={
@@ -98,7 +98,7 @@ export default function UserReports() {
             />
           }
           name="Modelos con Peor Rendimiento"
-          value="3"
+          value="2"
         />
         <MiniStatistics
           endContent={
@@ -132,7 +132,7 @@ export default function UserReports() {
             />
           }
           name="Total de Proyectos"
-          value="2935"
+          value="235"
         />
       </SimpleGrid>
 
