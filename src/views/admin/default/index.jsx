@@ -9,7 +9,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 // Assets
-import Usa from "assets/img/dashboards/usa.png";
+import Spain from "assets/img/dashboards/spain.png";
 // Custom components
 import MiniCalendar from "components/calendar/MiniCalendar";
 import MiniStatistics from "components/card/MiniStatistics";
@@ -104,7 +104,7 @@ export default function UserReports() {
           endContent={
             <Flex me="-16px" mt="10px">
               <FormLabel htmlFor="balance">
-                <Avatar src={Usa} />
+                <Avatar src={Spain} />
               </FormLabel>
               <Select
                 id="balance"
