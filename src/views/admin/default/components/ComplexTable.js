@@ -60,7 +60,6 @@ export default function ColumnsTable(props) {
       w="100%"
       px="0px"
       overflowX={{ sm: "scroll", lg: "auto" }}
-
     >
       <Flex px="25px" justify="space-between" mb="10px" align="center">
         <Text
@@ -73,10 +72,8 @@ export default function ColumnsTable(props) {
         </Text>
         <Menu />
       </Flex>
-
-
-      <div style={{ overflowY: "scroll", height: "200px" }}>
-        <Table {...getTableProps()} variant="simple" color="gray.500" mb="24px">
+      <Table {...getTableProps()} variant="simple" color="gray.500" mb="24px">
+        <div style={{ overflowY: "auto", height: "200px", width: "100%" }}>
           <Thead>
             {headerGroups.map((headerGroup, index) => (
               <Tr {...headerGroup.getHeaderGroupProps()} key={index}>
@@ -100,90 +97,91 @@ export default function ColumnsTable(props) {
               </Tr>
             ))}
           </Thead>
-          <Tbody {...getTableBodyProps()}>
+          <Tbody {...getTableBodyProps()} style={{ width: "100%" }}>
             {page.map((row, index) => {
-              prepareRow(row);
+                prepareRow(row);
 
-              return (
-                <Tr {...row.getRowProps()} key={index}>
-                  {row.cells.map((cell, index) => {
-                    let data = "";
-                    if (cell.column.Header === "Modelo") {
-                      data = (
-                        <Text color={textColor} fontSize="sm" fontWeight="700">
-                          {cell.value}
-                        </Text>
-                      );
-                    } else if (cell.column.Header === "Estado") {
-                      data = (
-                        <Flex align="center">
-                          <Icon
-                            w="24px"
-                            h="24px"
-                            me="5px"
-                            color={
-                              cell.value === "Good"
-                                ? "green.500"
-                                : cell.value === "Degraded"
-                                ? "orange.500"
-                                : cell.value === "Poor"
-                                ? "red.500"
-                                : null
-                            }
-                            as={
-                              cell.value === "Good"
-                                ? MdCheckCircle
-                                : cell.value === "Degraded"
-                                ? MdWarning
-                                : cell.value === "Poor"
-                                ? MdCancel
-                                : null
-                            }
-                          />
+                return (
+                  <Tr {...row.getRowProps()} key={index}>
+                    {row.cells.map((cell, index) => {
+                      let data = "";
+                      if (cell.column.Header === "Modelo") {
+                        data = (
                           <Text color={textColor} fontSize="sm" fontWeight="700">
                             {cell.value}
                           </Text>
-                        </Flex>
+                        );
+                      } else if (cell.column.Header === "Estado") {
+                        data = (
+                          <Flex align="center">
+                            <Icon
+                              w="24px"
+                              h="24px"
+                              me="5px"
+                              color={
+                                cell.value === "Good"
+                                  ? "green.500"
+                                  : cell.value === "Degraded"
+                                  ? "orange.500"
+                                  : cell.value === "Poor"
+                                  ? "red.500"
+                                  : null
+                              }
+                              as={
+                                cell.value === "Good"
+                                  ? MdCheckCircle
+                                  : cell.value === "Degraded"
+                                  ? MdWarning
+                                  : cell.value === "Poor"
+                                  ? MdCancel
+                                  : null
+                              }
+                            />
+                            <Text color={textColor} fontSize="sm" fontWeight="700">
+                              {cell.value}
+                            </Text>
+                          </Flex>
+                        );
+                      } else if (cell.column.Header === "Última predicción") {
+                        data = (
+                          <Text color={textColor} fontSize="sm" fontWeight="700">
+                            {cell.value}
+                          </Text>
+                        );
+                      } else if (cell.column.Header === "Consumo") {
+                        data = (
+                          <Flex align="center">
+                            <Progress
+                              variant="table"
+                              colorScheme="brandScheme"
+                              h="8px"
+                              w="108px"
+                              value={cell.value}
+                            />
+                          </Flex>
+                        );
+                      }
+                      return (
+                        <Td
+                          {...cell.getCellProps()}
+                          key={index}
+                          fontSize={{ sm: "14px" }}
+                          maxH="30px !important"
+                          py="8px"
+                          minW={{ sm: "150px", md: "200px", lg: "auto" }}
+                          borderColor="transparent"
+                        >
+                          {data}
+                        </Td>
                       );
-                    } else if (cell.column.Header === "Última predicción") {
-                      data = (
-                        <Text color={textColor} fontSize="sm" fontWeight="700">
-                          {cell.value}
-                        </Text>
-                      );
-                    } else if (cell.column.Header === "Consumo") {
-                      data = (
-                        <Flex align="center">
-                          <Progress
-                            variant="table"
-                            colorScheme="brandScheme"
-                            h="8px"
-                            w="108px"
-                            value={cell.value}
-                          />
-                        </Flex>
-                      );
-                    }
-                    return (
-                      <Td
-                        {...cell.getCellProps()}
-                        key={index}
-                        fontSize={{ sm: "14px" }}
-                        maxH="30px !important"
-                        py="8px"
-                        minW={{ sm: "150px", md: "200px", lg: "auto" }}
-                        borderColor="transparent"
-                      >
-                        {data}
-                      </Td>
-                    );
-                  })}
-                </Tr>
-              );
-            })}
+                    })}
+                  </Tr>
+                );
+              })}
           </Tbody>
-        </Table>
-      </div>
+        </div>
+
+      </Table>
 
     </Card>
   );
