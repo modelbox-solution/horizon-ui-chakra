@@ -25,14 +25,14 @@ export function ItemContent(props) {
           fontWeight='bold'
           color={textColor}
           fontSize={{ base: "md", md: "md" }}>
-          New Update: {props.info}
+          Nueva actualización: v.0.0.2
         </Text>
         <Flex alignItems='center'>
           <Text
             fontSize={{ base: "sm", md: "sm" }}
             lineHeight='100%'
             color={textColor}>
-            A new update for your downloaded item is available!
+            ¡Una nueva actualización está disponible para descargar!
           </Text>
         </Flex>
       </Flex>

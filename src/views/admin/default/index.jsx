@@ -128,7 +128,9 @@ export default function UserReports() {
         <WeeklyRevenue name="Tása de éxito" />
       </SimpleGrid>
       <SimpleGrid columns={{ base: 1, md: 1, xl: 2 }} gap="20px" mb="20px">
-        <CheckTable columnsData={columnsDataCheck} tableData={tableDataCheck} />
+        <Box gridColumn={{ base: 'auto', xl: 'span 1' }}>
+          <CheckTable columnsData={columnsDataCheck} tableData={tableDataCheck} />
+        </Box>
         <SimpleGrid columns={{ base: 1, md: 2, xl: 2 }} gap="20px">
           <DailyTraffic />
           <PieCard />

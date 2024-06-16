@@ -88,18 +88,15 @@ export default function HeaderLinks(props) {
 					maxW={{ base: '360px', md: 'unset' }}>
 					<Flex jusitfy="space-between" w="100%" mb="20px">
 						<Text fontSize="md" fontWeight="600" color={textColor}>
-							Notifications
+							Notificaciones
 						</Text>
 						<Text fontSize="sm" fontWeight="500" color={textColorBrand} ms="auto" cursor="pointer">
-							Mark all read
+							Marcar todo como leído
 						</Text>
 					</Flex>
 					<Flex flexDirection="column">
 						<MenuItem _hover={{ bg: 'none' }} _focus={{ bg: 'none' }} px="0" borderRadius="8px" mb="10px">
 							<ItemContent info="Horizon UI Dashboard PRO" aName="Alicia" />
-						</MenuItem>
-						<MenuItem _hover={{ bg: 'none' }} _focus={{ bg: 'none' }} px="0" borderRadius="8px" mb="10px">
-							<ItemContent info="Horizon Design System Free" aName="Josh Henry" />
 						</MenuItem>
 					</Flex>
 				</MenuList>
@@ -130,9 +127,9 @@ export default function HeaderLinks(props) {
           <Flex flexDirection='column'>
             <Link
               w='100%'
-              href='https://horizon-ui.com/pro?ref=horizon-chakra-free'>
+              href='https://modelbox.es/'>
               <Button w='100%' h='44px' mb='10px' variant='brand'>
-                Buy Horizon UI PRO
+                Contrata el servicio de ModelBox
               </Button>
             </Link>
             <Link
@@ -145,7 +142,7 @@ export default function HeaderLinks(props) {
                 border='1px solid'
                 bg='transparent'
                 borderColor={borderButton}>
-                See Documentation
+                Obtén más información
               </Button>
             </Link>
             <Link
@@ -157,7 +154,7 @@ export default function HeaderLinks(props) {
                 variant='no-hover'
                 color={textColor}
                 bg='transparent'>
-                Try Horizon Free
+                Pruébalo gratis
               </Button>
             </Link>
           </Flex>
@@ -190,15 +187,15 @@ export default function HeaderLinks(props) {
 							fontSize="sm"
 							fontWeight="700"
 							color={textColor}>
-							👋&nbsp; Hey, Adela
+							👋&nbsp; Hola, Víctor
 						</Text>
-					</Flex>
+					</Flex>	
 					<Flex flexDirection="column" p="10px">
 						<MenuItem _hover={{ bg: 'none' }} _focus={{ bg: 'none' }} borderRadius="8px" px="14px">
-							<Text fontSize="sm">Profile Settings</Text>
+							<Text fontSize="sm">Ajustes del perfil</Text>
 						</MenuItem>
 						<MenuItem _hover={{ bg: 'none' }} _focus={{ bg: 'none' }} borderRadius="8px" px="14px">
-							<Text fontSize="sm">Newsletter Settings</Text>
+							<Text fontSize="sm">Ajustes de buzón de novedades</Text>
 						</MenuItem>
 						<MenuItem
 							_hover={{ bg: 'none' }}
@@ -206,7 +203,7 @@ export default function HeaderLinks(props) {
 							color="red.400"
 							borderRadius="8px"
 							px="14px">
-							<Text fontSize="sm">Log out</Text>
+							<Text fontSize="sm">Cerrar Sesión</Text>
 						</MenuItem>
 					</Flex>
 				</MenuList>
