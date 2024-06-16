@@ -1,31 +1,32 @@
-[{
-  "name":["Horizon UI PRO",false],
-  "quantity": 2458, 
-  "date": "12 Jan 2021",
-  "progress": 17.5  
-},
-{
-  "name":["Horizon UI Free",true],
-  "quantity": 1485, 
-  "date": "21 Feb 2021",
-  "progress": 10.8  
-},
-{
-  "name":["Weekly Update",true],
-  "quantity": 1024, 
-  "date": "13 Mar 2021",
-  "progress": 21.3  
-},
-{
-  "name":["Venus 3D Asset",true],
-  "quantity": 858, 
-  "date": "24 Jan 2021",
-  "progress": 31.5  
-},
-{
-  "name":["Marketplace",false],
-  "quantity": 258, 
-  "date": "24 Oct 2022",
-  "progress": 12.2  
-}
+[
+  {
+    "modelo": ["Segmentación Clientes Minorista", true],
+    "owner": "respantaleonp",
+    "fecha": "12 Jan 2024",
+    "métricas": "0.72 🟩"
+  },
+  {
+    "modelo": ["Predicción Demanda Tienda", true],
+    "owner": "dparrop",
+    "fecha": "21 Feb 2024",
+    "métricas": "0.46 🟥"
+  },
+  {
+    "modelo": ["Análisis Comportamiento Compradores", false],
+    "owner": "vamadorp",
+    "fecha": "13 Mar 2024",
+    "métricas": "0.89 💎"
+  },
+  {
+    "modelo": ["Optimización Ventas", false],
+    "owner": "mpascualh",
+    "fecha": "24 Jan 2024",
+    "métricas": "0.51 🟨"
+  },
+  {
+    "modelo": ["Mejora Retención Clientes", false],
+    "owner": "ljulianr",
+    "fecha": "24 Oct 2024",
+    "métricas": "0.32 💩"
+  }
 ]

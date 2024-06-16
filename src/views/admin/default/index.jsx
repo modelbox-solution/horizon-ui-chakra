@@ -25,6 +25,7 @@ import {
   MdPeople,
   MdOutlineModelTraining,
 } from "react-icons/md";
+import { IoIosPersonAdd } from "react-icons/io";
 import { 
   FaRobot,
   FaBox 
@@ -121,7 +122,20 @@ export default function UserReports() {
           name="Modelos con Peor Rendimiento"
           value="2"
         />
+        <MiniStatistics
+          startContent={
+            <IconBox
+              w="56px"
+              h="56px"
+              bg={boxBg}
+              icon={<Icon w="32px" h="32px" as={IoIosPersonAdd} color={brandColor} />}
+            />
+          }
+          name="Mejor Owner"
+          value="jperezr"
+        />
       </SimpleGrid>
+      
 
       <SimpleGrid columns={{ base: 1, md: 2, xl: 2 }} gap="20px" mb="20px">
         <TotalSpent name="Rendimiento de Modelos" />

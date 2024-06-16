@@ -1,7 +1,7 @@
 export const columnsDataCheck = [
   {
-    Header: "NAME",
-    accessor: "name",
+    Header: "MODELO",
+    accessor: "modelo",
   },
   {
     Header: "PROGRESS",

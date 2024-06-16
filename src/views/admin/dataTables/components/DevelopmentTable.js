@@ -146,7 +146,7 @@ export default function DevelopmentTable(props) {
                         {cell.value}
                       </Text>
                     );
-                  } else if (cell.column.Header === "PROGRESS") {
+                  } else if (cell.column.Header === "PROGRESO") {
                     data = (
                       <Flex align='center'>
                         <Text

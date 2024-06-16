@@ -1,7 +1,7 @@
 export const columnsDataDevelopment = [
   {
-    Header: "NAME",
-    accessor: "name",
+    Header: "MODELO",
+    accessor: "modelo",
   },
   {
     Header: "TECH",
@@ -12,19 +12,19 @@ export const columnsDataDevelopment = [
     accessor: "date",
   },
   {
-    Header: "PROGRESS",
-    accessor: "progress",
+    Header: "PROGRESO",
+    accessor: "progreso",
   },
 ];
 
 export const columnsDataCheck = [
   {
-    Header: "NAME",
-    accessor: "name",
+    Header: "MODELO",
+    accessor: "modelo",
   },
   {
-    Header: "PROGRESS",
-    accessor: "progress",
+    Header: "PROGRESO",
+    accessor: "progreso",
   },
   {
     Header: "QUANTITY",
@@ -38,12 +38,12 @@ export const columnsDataCheck = [
 
 export const columnsDataColumns = [
   {
-    Header: "NAME",
-    accessor: "name",
+    Header: "MODELO",
+    accessor: "modelo",
   },
   {
-    Header: "PROGRESS",
-    accessor: "progress",
+    Header: "PROGRESO",
+    accessor: "progreso",
   },
   {
     Header: "QUANTITY",
@@ -69,7 +69,7 @@ export const columnsDataComplex = [
     accessor: "date",
   },
   {
-    Header: "PROGRESS",
-    accessor: "progress",
+    Header: "PROGRESO",
+    accessor: "progreso",
   },
 ];
