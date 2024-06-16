@@ -28,29 +28,5 @@
     "estado": "Poor",
     "última_predicción": "18 Marc 2023",
     "consumo": 40.0  
-  },  
-  {
-    "modelo": "Segmentación de Clientes",
-    "estado": "Poor",
-    "última_predicción": "16 Apr 2024",
-    "consumo": 20.0  
-  },  
-  {
-    "modelo": "Segmentación de Clientes",
-    "estado": "Poor",
-    "última_predicción": "16 Apr 2024",
-    "consumo": 20.0  
-  },  
-  {
-    "modelo": "Segmentación de Clientes",
-    "estado": "Poor",
-    "última_predicción": "16 Apr 2024",
-    "consumo": 20.0  
-  },  
-  {
-    "modelo": "Segmentación de Clientes",
-    "estado": "Poor",
-    "última_predicción": "16 Apr 2024",
-    "consumo": 20.0  
   }
 ]
