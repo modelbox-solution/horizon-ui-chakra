@@ -1,29 +1,29 @@
 import {
-  Avatar,
+  // Avatar,
   Box,
-  Flex,
-  FormLabel,
+  // Flex,
+  // FormLabel,
   Icon,
-  Select,
+  // Select,
   SimpleGrid,
   useColorModeValue,
 } from "@chakra-ui/react";
 // Assets
-import Spain from "assets/img/dashboards/spain.png";
+// import Spain from "assets/img/dashboards/spain.png";
 // Custom components
 import MiniCalendar from "components/calendar/MiniCalendar";
 import MiniStatistics from "components/card/MiniStatistics";
 import IconBox from "components/icons/IconBox";
 import React from "react";
 import {
-  MdAddTask,
-  MdAttachMoney,
-  MdBarChart,
-  MdFileCopy,
+  // MdAddTask,
+  // MdAttachMoney,
+  // MdBarChart,
+  // MdFileCopy,
   MdAssessment,
-  MdModelTraining,
+  // MdModelTraining,
   MdPeople,
-  MdOutlineModelTraining,
+  // MdOutlineModelTraining,
 } from "react-icons/md";
 import { 
   FaRobot,
@@ -34,7 +34,7 @@ import CheckTable from "views/admin/default/components/CheckTable";
 import ComplexTable from "views/admin/default/components/ComplexTable";
 import DailyTraffic from "views/admin/default/components/DailyTraffic";
 import PieCard from "views/admin/default/components/PieCard";
-import Tasks from "views/admin/default/components/Tasks";
+// import Tasks from "views/admin/default/components/Tasks";
 import TotalSpent from "views/admin/default/components/TotalSpent";
 import WeeklyRevenue from "views/admin/default/components/WeeklyRevenue";
 import {
