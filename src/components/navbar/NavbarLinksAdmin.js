@@ -4,7 +4,7 @@ import {
 	Button,
 	Flex,
 	Icon,
-	Image,
+	// Image,
 	Link,
 	Menu,
 	MenuButton,
