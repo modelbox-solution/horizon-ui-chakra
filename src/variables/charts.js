@@ -66,7 +66,7 @@ export const barChartOptionsDailyCallsAPI = {
   },
   grid: {
     show: false,
-    strokeDashArray: 5,
+    strOKeDashArray: 5,
     yaxis: {
       lines: {
         show: true,
@@ -124,7 +124,7 @@ export const barChartDataModelLaunchings = [
     data: [1, 0, 1, 2, 0, 1, 0, 0, 1],
   },
   {
-    name: "SIN LANZAR",
+    name: "Sin lanzar",
     data: [0, 1, 0, 1, 1, 0, 0, 1, 1],
   },
 ];
@@ -289,10 +289,10 @@ export const lineChartOptionsSucessRate = {
   markers: {
     size: 0,
     colors: "white",
-    strokeColors: "#7551FF",
-    strokeWidth: 3,
-    strokeOpacity: 0.9,
-    strokeDashArray: 0,
+    strOKeColors: "#7551FF",
+    strOKeWidth: 3,
+    strOKeOpacity: 0.9,
+    strOKeDashArray: 0,
     fillOpacity: 1,
     discrete: [],
     shape: "circle",
@@ -307,7 +307,7 @@ export const lineChartOptionsSucessRate = {
   dataLabels: {
     enabled: false,
   },
-  stroke: {
+  strOKe: {
     curve: "smooth", // Aplicado globalmente, pero se puede sobrescribir en cada serie
   },
   xaxis: {
@@ -361,14 +361,14 @@ export const lineChartOptionsSucessRate = {
     {
       name: "Tása de éxito",
       data: [25, 50, 64, 48, 66, 49, 48],
-      stroke: {
+      strOKe: {
         type: "solid",
       },
     },
     {
       name: "Tasa natural",
       data: [12, 30, 50, 24, 16, 50, 86],
-      stroke: {
+      strOKe: {
         type: "dashed",
         dashArray: 5, // Configuración específica para la línea discontinua
       },

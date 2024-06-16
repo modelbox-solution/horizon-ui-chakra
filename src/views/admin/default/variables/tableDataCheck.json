@@ -3,30 +3,30 @@
     "modelo": ["Segmentación Clientes Minorista", true],
     "owner": "respantaleonp",
     "fecha": "12 Jan 2024",
-    "métricas": "0.72 🟩"
+    "métricas": "0.72"
   },
   {
     "modelo": ["Predicción Demanda Tienda", true],
     "owner": "dparrop",
     "fecha": "21 Feb 2024",
-    "métricas": "0.46 🟥"
+    "métricas": "0.46"
   },
   {
     "modelo": ["Análisis Comportamiento Compradores", false],
     "owner": "vamadorp",
     "fecha": "13 Mar 2024",
-    "métricas": "0.89 💎"
+    "métricas": "0.89"
   },
   {
     "modelo": ["Optimización Ventas", false],
     "owner": "mpascualh",
     "fecha": "24 Jan 2024",
-    "métricas": "0.51 🟨"
+    "métricas": "0.51"
   },
   {
     "modelo": ["Mejora Retención Clientes", false],
     "owner": "ljulianr",
     "fecha": "24 Oct 2024",
-    "métricas": "0.32 💩"
+    "métricas": "0.32"
   }
 ]
