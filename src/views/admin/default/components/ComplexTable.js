@@ -73,7 +73,7 @@ export default function ColumnsTable(props) {
         <Menu />
       </Flex>
       <Table {...getTableProps()} variant="simple" color="gray.500" mb="24px">
-        <div style={{ overflowY: "auto", height: "200px", width: "100%" }}>
+        <div style={{ overflowY: "auto", height: "100%" }}>
           <Thead>
             {headerGroups.map((headerGroup, index) => (
               <Tr {...headerGroup.getHeaderGroupProps()} key={index}>
@@ -97,7 +97,7 @@ export default function ColumnsTable(props) {
               </Tr>
             ))}
           </Thead>
-          <Tbody {...getTableBodyProps()} style={{ width: "100%" }}>
+          <Tbody {...getTableBodyProps()}>
             {page.map((row, index) => {
                 prepareRow(row);
 
